@@ -1,7 +1,7 @@
 {
   "name": "oceanic-next-mod-syntax",
   "description": "Oceanic Next Mod",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "theme": "syntax",
   "repository": {
     "type": "git",
