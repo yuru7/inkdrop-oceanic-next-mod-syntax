@@ -1,0 +1,164 @@
+/*
+based: Solarized theme for code-mirror
+http://ethanschoonover.com/solarized
+*/
+
+@import "./colors";
+
+.editor {
+
+  /* Color scheme for code-mirror */
+
+  .CodeMirror {
+    color-profile: sRGB;
+    rendering-intent: auto;
+    color: @base06;
+    background-color: @base00;
+    // text-shadow: @base00 0 1px;
+
+    .cm-header { color: @base0A; }
+    .cm-quote { color: @base05; }
+
+    .cm-atom { color: @base08; }
+    .cm-number { color: @base08; }
+    .cm-property { color: @base0D; }
+    .cm-def { color: @base0A; }
+    .cm-variable { color: @base08; }
+
+    // .cm-variable-2 { color: @base08; }
+    // .cm-variable-3 { color: @base09; }
+    // .cm-keyword { color: @base0A; }
+    .cm-variable-2.cm-formatting-list-ul { color: @base08; }
+    .cm-variable-3.cm-formatting-list-ul { color: @base09; }
+    .cm-keyword.cm-formatting-list-ul { color: @base0A; }
+    .cm-formatting-list-ol { color: @base0E; }
+
+    .cm-operator { color: @base0C; }
+
+    .cm-comment { color: @base03; }
+    
+    .cm-quote { color: @base0E; }
+
+    .cm-string { color: @base0B; }
+    .cm-string-2 { color: @base0B; }
+
+    .cm-meta { color: @base0C; }
+    .cm-qualifier { color: @base0A; }
+    .cm-builtin { color: @base08; }
+    .cm-bracket { color: @base0A; }
+    .CodeMirror-matchingbracket { color: @base09; }
+    .CodeMirror-nonmatchingbracket { color: @base08; }
+    .cm-tag { color: @base05; }
+    .cm-attribute { color: @base0B; }
+
+    .CodeMirror-widget {
+      text-shadow: none;
+    }
+
+    /*
+    .cm-hr {
+      color: transparent;
+      border-top: 1px solid @base02;
+      display: block;
+    }
+    */
+    .cm-link { color: @base0D; cursor: pointer; }
+    .cm-special { color: @base0E; }
+    .cm-em { 
+      font-style: italic;
+      color: @base0C; }
+    .cm-strong { color: @base08; }
+    .cm-error,
+    .cm-invalidchar {
+      color: @base0F;
+      border-bottom: 1px dotted @base08;
+    }
+    .cm-whitespace::before {
+      color: @base03;
+      opacity: 0.4;
+    }
+
+    // carriage return
+    .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
+      color: @base03;
+      opacity: 0.4;
+    }
+    .CodeMirror-selected {
+      // Highlighed text
+      background-color: @base02;
+      opacity: 0.6;
+    }
+  }
+
+//  .CodeMirror div.CodeMirror-selected { background: @base01; }
+//  .CodeMirror.CodeMirror ::selection { background: rgba(87, 96, 109, 0.99); }
+//  .CodeMirror .CodeMirror-line::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: rgba(87, 96, 109, 0.99); }
+
+  
+  /* Editor styling */
+
+
+
+  /* Little shadow on the view-port of the buffer view */
+  .CodeMirror {
+    -moz-box-shadow: inset 7px 0 12px -6px #000;
+    -webkit-box-shadow: inset 7px 0 12px -6px #000;
+    box-shadow: inset 7px 0 12px -6px #000;
+  }
+
+  /* Gutter border and some shadow from it  */
+  .CodeMirror .CodeMirror-gutters {
+    border-right: 1px solid;
+  }
+
+  /* Gutter colors and line number styling based of color scheme (dark / light) */
+
+  /* Dark */
+  .CodeMirror .CodeMirror-gutters {
+    background-color: @base00;
+    border-color: #00232c;
+  }
+
+  .CodeMirror .CodeMirror-linenumber {
+    text-shadow: #021014 0 -1px;
+  }
+
+  /* Common */
+  .CodeMirror .CodeMirror-linenumber {
+    color: @base02;
+    padding: 0 5px;
+  }
+  .CodeMirror .CodeMirror-guttermarker-subtle { color: @base02; }
+  .CodeMirror .CodeMirror-guttermarker { color: #ddd; }
+
+  .CodeMirror .CodeMirror-gutter .CodeMirror-gutter-text {
+    color: @base02;
+  }
+
+  .CodeMirror .CodeMirror-cursor { border-left: 1px solid #FFE9A0; }
+
+  /*
+  Active line. Negative margin compensates left padding of the text in the
+  view-port
+  */
+  .CodeMirror .CodeMirror-activeline-background {
+    background: rgba(255, 255, 255, 0.10);
+  }
+
+  .cm-formatting-header {
+    opacity: 0.4;
+  }
+
+  .cm-searching {
+    // Ctrl + F results
+    border: 1px solid @base0A;
+    padding: 2px;
+    color: white !important;
+    background: transparent;
+  }
+
+  .CodeMirror .CodeMirror-linewidget img.inline-widget {
+    background: rgba(255,255,255,0.05);
+  }
+
+}

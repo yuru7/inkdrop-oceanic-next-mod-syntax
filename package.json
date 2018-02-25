@@ -1,0 +1,16 @@
+{
+  "name": "oceanic-next-mod-syntax",
+  "description": "Oceanic Next Mod",
+  "version": "0.1.0",
+  "theme": "syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuru7/inkdrop-oceanic-next-mod-syntax"
+  },
+  "engines": {
+    "inkdrop": ">=3.17.0"
+  },
+  "styleSheets": [
+    "oceanic-next-mod.less"
+  ]
+}
