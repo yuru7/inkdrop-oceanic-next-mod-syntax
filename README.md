@@ -2,7 +2,7 @@
 
 Oceanic Next のカラースキームに準拠したカラーテーマです。
 
-ほぼ Oceanic Next を踏襲し、一部を私の好みで微修正を加えています。
+ほぼ Oceanic Next を踏襲し、一部、私の好みで微修正を加えています。
 
 ## Install
 
